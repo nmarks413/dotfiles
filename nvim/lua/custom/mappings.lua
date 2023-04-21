@@ -1,0 +1,16 @@
+---@type MappingsTable
+local M = {}
+
+M.general = {
+  n = {
+    [";"] = { ":", "enter command mode", opts = { nowait = true } },
+  },
+  v = {
+    ["<"] = {"<gv", "stay in indent mode", opts = {silent = true}},
+    [">"] = {">gv", "stay in indent mode", opts = {silent = true}},
+  }
+}
+
+-- more keybinds!
+
+return M
